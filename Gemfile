@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'sass-rails'
+gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'uglifier'
 gem 'coffee-rails'
