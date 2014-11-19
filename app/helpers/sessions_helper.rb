@@ -1,7 +1,7 @@
 module SessionsHelper
 #Logs in the given user
   def log_in(user)
-      session[:user_id]=userr.id
+      session[:user_id]=user.id
   end
 
 # Forgets a persistent session.
