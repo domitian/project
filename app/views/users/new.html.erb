@@ -10,8 +10,9 @@
       <%= f.label :email %>
       <%= f.text_field :email,class:'form-control' %>
       <%= f.label :role %>
-      <%= f.text_field :role,class:'form-control' %>
-
+  <%= select("user", "role", @role.collect {|r| [ r.role_name, r.id ] }, { include_blank:'None' })%>      
+	<%=f.label :department%>
+      <%= select("user", "role", @dept.collect {|d| [ d.dept_name, d.id ] }, { include_blank:'None' })%>
       <%= f.label :password %>
       <%= f.password_field :password,class:'form-control' %>
 
@@ -20,6 +21,8 @@
 
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
+	 
+	
   </div>
 </div>
 
