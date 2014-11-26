@@ -10,9 +10,9 @@
       <%= f.label :email %>
       <%= f.text_field :email,class:'form-control' %>
       <%= f.label :role %>
-  <%= select("user", "role", @role.collect {|r| [ r.role_name, r.id ] }, { include_blank:'None' })%>      
+  <%= select("user", "role_id", @role.collect {|r| [ r.role_name, r.id ] }, { include_blank:'None' })%>      
 	<%=f.label :department%>
-      <%= select("user", "role", @dept.collect {|d| [ d.dept_name, d.id ] }, { include_blank:'None' })%>
+      <%= select("user", "department_id", @dept.collect {|d| [ d.dept_name, d.id ] }, { include_blank:'None' })%>
       <%= f.label :password %>
       <%= f.password_field :password,class:'form-control' %>
 
