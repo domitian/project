@@ -21,5 +21,9 @@
    </div>
    <div class="col-md-9">
 	<p>hello this is middle of the text</p>
+	<% if @deparment %>
+		<%= @deparment.name %>
+		<!-- you can show more department related data if you want-->
+	<% end %>
    </div>
 </div>
