@@ -11,8 +11,11 @@ before_action :admin_user,     only: :destroy
 	@role=Role.all
   end
   def show
-  @user=User.find(params[:id])
-  @dept=Department.all	  
+  	@user=User.find(params[:id])
+  	@dept=Department.all	  
+  	if params[:department_id]
+  		@department = Department.find(params[:deparament_id])
+  	end
   end
 
   def create
