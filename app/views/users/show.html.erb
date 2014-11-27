@@ -12,9 +12,10 @@
 	</br>
 	</br>
 	<h3>
-	<%= link_to 'Departments','#' %>
+	<%= link_to 'Departments',user_path(id: @user.id,department_id: @user.department_id) %>
 	</br>
 	</br>
+	<!--write similarly for store here as well, if user also has store_id column-->
 	<%= link_to 'store info','#' %>
 	</h3>
        </section>
